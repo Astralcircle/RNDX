@@ -94,11 +94,6 @@ screenspace_general
 	$copyalpha                 0
 	$alpha_blend_color_overlay 0
 	$alpha_blend               1 // for AA
-	$linearwrite               1 // to disable broken gamma correction for colors
-	$linearread_basetexture    1 // to disable broken gamma correction for textures
-	$linearread_texture1       1 // to disable broken gamma correction for textures
-	$linearread_texture2       1 // to disable broken gamma correction for textures
-	$linearread_texture3       1 // to disable broken gamma correction for textures
 }
 ]==]
 
