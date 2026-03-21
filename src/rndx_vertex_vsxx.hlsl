@@ -6,7 +6,8 @@ VS_OUTPUT main( const VS_INPUT v )
 
     o.projPos.xyzw = mul( float4( v.pos.xyz, 1.0f ), cModelViewProj );
     o.uv = v.uv;
-    o.color.rgba = v.color.rgba;
+    o.color.rgb = pow(max(v.color.rgb, 0.0), 2.2);
+    o.color.a = v.color.a;
 
     return o;
 }
